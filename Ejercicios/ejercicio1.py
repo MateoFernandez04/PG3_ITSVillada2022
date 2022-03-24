@@ -1,6 +1,6 @@
 listavalores=[10, 56, 23, 120, 94]
 print(listavalores)
-print("Escriba el valor a buscar")
+print("Escriba el valor a  buscar")
 numero=int(input())
 def buscar(lista, num):
     print(lista)
