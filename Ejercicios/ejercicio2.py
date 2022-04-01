@@ -1,5 +1,5 @@
 print("Coloque un año")
-año=int(input())
+anio=int(input())
 
 
 def bisiest(num):
@@ -12,4 +12,4 @@ def bisiest(num):
     else:
         return False
 
-print("¿El año es bisiesto?:", bisiest(año))
+print("¿El año es bisiesto?:", bisiest(anio))
