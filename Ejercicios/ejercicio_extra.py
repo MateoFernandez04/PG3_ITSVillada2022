@@ -2,6 +2,7 @@ print("Escriba el valor de la altura")
 num: int =int(input())
 caracter:str =input("Caracter a escribir: ")
 print("1-triangulo Normal")
+
 print("2-triangulo invertido")
 option:int=int(input("Coloque opción a hacer: "))
 aux:int=num
