@@ -1,13 +1,20 @@
-class Familia():
-    def __init__(self,dad,mum,sons):
-        self.dad = dad
-        self.mum = mum
-        self.sons = sons
+class Familia:
+
+    def __init__(self,padre,madre,hijos=[]):
+        self.padre=padre
+        self.madre=madre
+        self.hijos=hijos
 
     def __str__(self):
-        return f" Dad: {self.dad} \n Mum: {self.mum} \n Sons: {self.sons}"
+        cadena=self.padre+","+self.madre
+        for hi in self.hijos:
+            cadena=cadena+","+hi
+        return cadena
 
+familia1=Familia("Pablo","Ana",["Pepe","Julio"])
+familia2=Familia("Jorge","Carla")
+familia3=Familia("Luis","Maria",["marcos"])
 
-
-familia  = Familia("Felipe", "Artemis", ["Hache","Sorrento","Oasis"] )
-print(familia)
+print(familia1)
+print(familia2)
+print(familia3)
