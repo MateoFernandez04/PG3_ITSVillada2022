@@ -6,9 +6,9 @@ class Familia:
         self.hijos=hijos
 
     def __str__(self):
-        cadena=self.padre+","+self.madre
+        cadena=self.padre+", "+self.madre
         for hi in self.hijos:
-            cadena=cadena+","+hi
+            cadena=cadena+", "+hi
         return cadena
 
 familia1=Familia("Pablo","Ana",["Pepe","Julio"])
