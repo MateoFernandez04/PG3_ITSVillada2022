@@ -1,18 +1,18 @@
 while True:
     try:
-        ingreso = input("Ingresar string: ")
-        datos = open('./Ejercicios_EXC/texto.txt', 'a')
+        escrito = input("Ingresar string: ")
+        f = open('./Ejercicios_EXC/texto.txt', 'a')
 
-        if ingreso.isnumeric():
-            datos.write(int(ingreso))
+        if escrito.isnumeric():
+            f.write(int(escrito))
         else:
-            datos.write(ingreso)
+            f.write('\n' + escrito)
         while True:
-            print("Quiere seguir escribiendo: /n")
-            ans=input("ingrese opción Yes=s // No=n: ")
-            if ans == "s" or ans == "n":
+            print("Quiere seguir escribiendo: ")
+            option=input("ingrese opción Yes=s // No=n: ")
+            if option == "s" or option == "n":
                 break;
-        if ans=="n":
+        if option=="n":
             break  
     except TypeError:
         print("No intente ingresar numeros")
