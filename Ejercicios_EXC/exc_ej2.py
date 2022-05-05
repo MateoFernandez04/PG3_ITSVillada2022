@@ -7,6 +7,5 @@ def division(a, b):
         print(f"La division entre'{a}' y {b} da {result} ")
 
 num = int(input("Coloque un numero: "))
-num2 = int(input("Coloque otro numero"))
-
+num2 = int(input("Coloque otro numero: "))
 division(num,num2)
