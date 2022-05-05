@@ -4,17 +4,14 @@ class Triangulo:
         self.lado1=lado1
         self.lado2=lado2
         self.lado3=lado3
+        self.lados=[lado1,lado2,lado3]
 
     def imprimir_LMayor(self):
-        if self.lado1 > self.lado2:
-            if self.lado1 > self.lado3:
-                print("Lado mayor: ",self.lado1)
-            else:
-                print("Lado mayor: ",self.lado3)
-        elif self.lado2>self.lado3:
-            print("Lado mayor: ",self.lado2)
-        else:
-            print("Lado mayor: ",self.lado3)
+        mayor=self.lados[0]
+        for x in range(len(self.lados)):
+            if self.lados[x]>mayor:
+                mayor=self.lados[x]
+        print (f"El lado mayor mide: {mayor}")
 
     def is_equilatero(self):
         if self.lado1 ==self.lado2 ==self.lado3:
@@ -26,7 +23,7 @@ class Triangulo:
 # principal
 
 triangulo1=Triangulo()
-triangulo1.inicializar(5,5,5)
+triangulo1.inicializar(10,56,9)
 triangulo1.imprimir_LMayor()
 triangulo1.is_equilatero()
 
